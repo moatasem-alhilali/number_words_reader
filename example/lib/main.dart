@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               Text(
-                NumberWordsReader.convertToArabic(4500),
+                NumberWordsReader.convertToArabic('4500'),
                 style:
                     const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               Text(
-                NumberWordsReader.convertToEnglish(4500),
+                NumberWordsReader.convertToEnglish('4500'),
                 style:
                     const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
