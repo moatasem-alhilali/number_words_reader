@@ -1,7 +1,7 @@
 library number_to_word_arabic;
 
-import 'helper/number_arabic_reader.dart';
-import 'helper/number_english_reader.dart';
+import 'package:number_words_reader/number_arabic.dart';
+import 'package:number_words_reader/number_english.dart';
 
 class NumberWordsReader {
   /// Converts the given [number] to Arabic words.
@@ -11,8 +11,8 @@ class NumberWordsReader {
   /// var arabicResult = NumberArabicReader.convert('4500');
   /// print(arabicResult); // Output: "أربعة آلاف وخمسمائة"
   /// ```
-  static String convertToArabic(number) {
-    return NumberArabicReader.convert(number);
+  static String convertToArabic(String number) {
+    return NumberArabic.convert(number);
   }
 
   /// Converts the given [number] to English words.
@@ -23,6 +23,6 @@ class NumberWordsReader {
   /// print(englishResult); // Output: "Four thousand five hundred"
   /// ```
   static String convertToEnglish(number) {
-    return NumberEnglishReader.convert(number);
+    return NumberEnglish.convert(number);
   }
 }

@@ -1,6 +1,5 @@
-library number_to_word_arabic;
 
-class NumberArabicReader {
+class NumberArabic {
   ///handle converter
   static String convert(String number) {
     var value = "";
@@ -277,7 +276,7 @@ class Options {
 
   String thousandsTrillions(one, two, three, eleven, diff, number, other) {
     other = int.parse(other);
-    other = NumberArabicReader.convert('$other');
+    other = NumberArabic.convert('$other');
 
     if (other == "") {
       other = "صفر";

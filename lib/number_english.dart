@@ -1,9 +1,8 @@
-library number_to_word_arabic;
+library number_english;
 
 /// Converts the given [number] to English words.
-
-class NumberEnglishReader {
-  NumberEnglishReader._();
+class NumberEnglish {
+  NumberEnglish._();
 
   ///handle converter
   static String convert(int number) {
